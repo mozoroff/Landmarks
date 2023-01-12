@@ -9,8 +9,11 @@ import SwiftUI
 
 //カスタム イメージ ビューを作成する、円形にマスクしドロップシャドウと線をつけた
 struct CircleImage: View {
+    var image : Image
+    
     var body: some View {
-        Image("turtlerock") //アセットに登録した画像の呼び出し
+        //アセットに登録した画像の呼び出し
+        image
             .clipShape(Circle()) //円型にマスク
             .overlay{ //円型の線をつける
                 Circle().stroke(.white, lineWidth: 4)
@@ -22,6 +25,6 @@ struct CircleImage: View {
 
 struct CircleImage_Previews: PreviewProvider {
     static var previews: some View {
-        CircleImage()
+        CircleImage(image: Image("turtlerock"))
     }
 }

@@ -19,7 +19,8 @@ struct LandmarkList: View {
             List (landmarks){ landmark in
                 //リストのクロージャ内で、返された行を NavigationLink でラップし、LandmarkDetail ビューを宛先として指定します。
                 NavigationLink{
-                    LandmarkDetail()
+                    //LandmarkDetail ファイルで、必要なデータをカスタム タイプに渡します。
+                    LandmarkDetail(landmark:landmark)
                 }label: {
                     LandmarkRow(landmark: landmark)
                 }
