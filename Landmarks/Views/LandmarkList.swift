@@ -32,6 +32,13 @@ struct LandmarkList: View {
 }
 struct LandmarkList_Previews: PreviewProvider {
     static var previews: some View {
-        LandmarkList()
-    }
+        //リスト プレビュー内で、デバイス名の配列をデータとして使用して、インスタンスにLandmarkListForEachを埋め込みます。
+        ForEach(["iPhone SE (3rd generation)", "iPhone 12"], id: \.self) { deviceName in
+                    LandmarkList()
+                        .previewDevice(PreviewDevice(rawValue: deviceName))
+            //previewDisplayName(_:)修飾子を使用して、デバイス名をプレビューのラベルとして追加します。
+                        .previewDisplayName(deviceName)
+                }
+}
+
 }
