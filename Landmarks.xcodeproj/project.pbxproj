@@ -17,6 +17,8 @@
 		CAEF22BE296FCE3D00BEDCAB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAEF2294296FCE3B00BEDCAB /* ContentView.swift */; };
 		CAEF22BF296FCE3D00BEDCAB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CAEF2295296FCE3C00BEDCAB /* Assets.xcassets */; };
 		CAEF22C0296FCE3D00BEDCAB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CAEF2295296FCE3C00BEDCAB /* Assets.xcassets */; };
+		CAEF22D0296FDA2900BEDCAB /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAEF22CF296FDA2900BEDCAB /* CircleImage.swift */; };
+		CAEF22D1296FDA2900BEDCAB /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAEF22CF296FDA2900BEDCAB /* CircleImage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,7 @@
 		CAEF22B3296FCE3D00BEDCAB /* Tests macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CAEF22B7296FCE3D00BEDCAB /* Tests_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOS.swift; sourceTree = "<group>"; };
 		CAEF22B9296FCE3D00BEDCAB /* Tests_macOSLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOSLaunchTests.swift; sourceTree = "<group>"; };
+		CAEF22CF296FDA2900BEDCAB /* CircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +103,7 @@
 				CAEF2293296FCE3B00BEDCAB /* LandmarksApp.swift */,
 				CAEF2294296FCE3B00BEDCAB /* ContentView.swift */,
 				CAEF2295296FCE3C00BEDCAB /* Assets.xcassets */,
+				CAEF22CF296FDA2900BEDCAB /* CircleImage.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -301,6 +305,7 @@
 			files = (
 				CAEF22BD296FCE3D00BEDCAB /* ContentView.swift in Sources */,
 				CAEF22BB296FCE3D00BEDCAB /* LandmarksApp.swift in Sources */,
+				CAEF22D0296FDA2900BEDCAB /* CircleImage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -310,6 +315,7 @@
 			files = (
 				CAEF22BE296FCE3D00BEDCAB /* ContentView.swift in Sources */,
 				CAEF22BC296FCE3D00BEDCAB /* LandmarksApp.swift in Sources */,
+				CAEF22D1296FDA2900BEDCAB /* CircleImage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
