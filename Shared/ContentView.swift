@@ -10,9 +10,17 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Container@*/VStack/*@END_MENU_TOKEN@*/ {
-            Text("Turtle Rock")
-                .font(.title)
-                .foregroundColor(.black)
+            VStack(alignment: .leading) {
+                Text("Turtle Rock")
+                    .font(.title)
+                HStack {
+                    Text("Joshua Tree National Park")
+                        .font(.subheadline)
+                    Spacer()
+                    Text("California")
+                        .font(.subheadline)
+                }
+            }
             .padding()
         }
     }
