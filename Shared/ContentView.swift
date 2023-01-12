@@ -9,8 +9,12 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, world!")
+        /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Container@*/VStack/*@END_MENU_TOKEN@*/ {
+            Text("Turtle Rock")
+                .font(.title)
+                .foregroundColor(.black)
             .padding()
+        }
     }
 }
 
