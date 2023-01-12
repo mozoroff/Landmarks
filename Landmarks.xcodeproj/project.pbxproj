@@ -19,6 +19,8 @@
 		CAEF22C0296FCE3D00BEDCAB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CAEF2295296FCE3C00BEDCAB /* Assets.xcassets */; };
 		CAEF22D0296FDA2900BEDCAB /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAEF22CF296FDA2900BEDCAB /* CircleImage.swift */; };
 		CAEF22D1296FDA2900BEDCAB /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAEF22CF296FDA2900BEDCAB /* CircleImage.swift */; };
+		CAEF22D3296FDB9700BEDCAB /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAEF22D2296FDB9700BEDCAB /* MapView.swift */; };
+		CAEF22D4296FDB9700BEDCAB /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAEF22D2296FDB9700BEDCAB /* MapView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +54,7 @@
 		CAEF22B7296FCE3D00BEDCAB /* Tests_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOS.swift; sourceTree = "<group>"; };
 		CAEF22B9296FCE3D00BEDCAB /* Tests_macOSLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOSLaunchTests.swift; sourceTree = "<group>"; };
 		CAEF22CF296FDA2900BEDCAB /* CircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
+		CAEF22D2296FDB9700BEDCAB /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +107,7 @@
 				CAEF2294296FCE3B00BEDCAB /* ContentView.swift */,
 				CAEF2295296FCE3C00BEDCAB /* Assets.xcassets */,
 				CAEF22CF296FDA2900BEDCAB /* CircleImage.swift */,
+				CAEF22D2296FDB9700BEDCAB /* MapView.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -304,6 +308,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CAEF22BD296FCE3D00BEDCAB /* ContentView.swift in Sources */,
+				CAEF22D3296FDB9700BEDCAB /* MapView.swift in Sources */,
 				CAEF22BB296FCE3D00BEDCAB /* LandmarksApp.swift in Sources */,
 				CAEF22D0296FDA2900BEDCAB /* CircleImage.swift in Sources */,
 			);
@@ -314,6 +319,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CAEF22BE296FCE3D00BEDCAB /* ContentView.swift in Sources */,
+				CAEF22D4296FDB9700BEDCAB /* MapView.swift in Sources */,
 				CAEF22BC296FCE3D00BEDCAB /* LandmarksApp.swift in Sources */,
 				CAEF22D1296FDA2900BEDCAB /* CircleImage.swift in Sources */,
 			);
