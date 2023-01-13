@@ -8,11 +8,16 @@
 import SwiftUI
 
 struct LandmarkList: View {
+    //ビューに@EnvironmentObjectのプロパティ宣言を追加し、プレビューにenvironmentObject(_:)モディファイアを追加します。modelDataプロパティは、親にenvironmentObject(_:)モディファイアが適用されていれば、自動的にその値が取得されます。
+    @EnvironmentObject var modelData:ModelData
+    
     //初期値を false に設定して、showFavoritesOnly という @State プロパティを追加します。 状態プロパティを使用してビューとそのサブビューに固有の情報を保持するため、状態は常にprivateとして作成します。
     @State private var showFavoritesOnly = false
+    
+    
     // Computed property(var 変数名：型　{処理内容})
     var filteredLandmarks: [Landmark] {
-        landmarks.filter{
+        modelData.landmarks.filter{
             landmark in (!showFavoritesOnly || landmark.isFavorite)
         }
     }

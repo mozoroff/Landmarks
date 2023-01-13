@@ -29,6 +29,7 @@ struct LandmarkRow: View {
 }
 
 struct LandmarkRow_Previews: PreviewProvider {
+    static var landmarks = ModelData().landmarks
     static var previews: some View {
         //LandmarkRow_Previews のプレビュー静的プロパティで、landmarks 配列の最初の要素を指定して、landmark パラメーターを LandmarkRow 初期化子に追加します。
         //返された行をGroupでラップし、最初の行を再度追加します。
