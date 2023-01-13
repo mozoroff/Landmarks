@@ -6,7 +6,7 @@
 //
 
 //landmarkData.json データ ファイル内のいくつかのキーの名前と一致するいくつかのプロパティを持つ Landmark 構造を定義します。
-//import Foundation 低レベルの基礎的なフレームワーク、SwiftUI、UIKitなど予めFaundationを含んでいるフレームワークを使用する場合は明示的にimportしない
+//import Foundation 低レベルの基礎的なフレームワーク、SwiftUI、UIKitなど予めFaundationを含んでいるフレームワークを使用する場合はimportしない
 import SwiftUI
 import CoreLocation //位置情報関連のフレームワーク
 
