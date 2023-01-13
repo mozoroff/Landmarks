@@ -18,7 +18,12 @@ struct LandmarkRow: View {
             Text(landmark.name)
             
             Spacer()
-        
+        //SwiftUI ブロックでは、条件付きでビューを含めるために if 文を使用します。
+            if landmark.isFavorite {
+                Image(systemName: "star.fill")
+                // システムイメージはベクターなので修飾子で色が変更できる
+                    .foregroundColor(.yellow)
+            }
         }
     }
 }
@@ -28,7 +33,6 @@ struct LandmarkRow_Previews: PreviewProvider {
         //LandmarkRow_Previews のプレビュー静的プロパティで、landmarks 配列の最初の要素を指定して、landmark パラメーターを LandmarkRow 初期化子に追加します。
         //返された行をGroupでラップし、最初の行を再度追加します。
         //Groupビューのコンテンツをグループ化するためのコンテナーです。Xcode は、グループの子ビューを個別のプレビューとしてキャンバスにレンダリングします。
-        
         Group {
             LandmarkRow(landmark: landmarks[0])
             LandmarkRow(landmark: landmarks[1])

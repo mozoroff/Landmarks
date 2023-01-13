@@ -4,8 +4,9 @@
 //
 //  Created by kensho on 2023/01/12.
 //
+
 //landmarkData.json データ ファイル内のいくつかのキーの名前と一致するいくつかのプロパティを持つ Landmark 構造を定義します。
-import Foundation //低レベルの基礎的なフレームワーク、UIKitなど予めFaundationを含んでいるフレームワークを使用する場合は明示的にimportしない
+//import Foundation 低レベルの基礎的なフレームワーク、SwiftUI、UIKitなど予めFaundationを含んでいるフレームワークを使用する場合は明示的にimportしない
 import SwiftUI
 import CoreLocation //位置情報関連のフレームワーク
 
@@ -15,6 +16,8 @@ struct Landmark: Hashable, Codable, Identifiable{
     var park:String
     var state:String
     var description: String
+    var isFavorite: Bool
+    
     
     //データから画像の名前を読み取るための imageName プロパティと、アセット カタログから画像を読み込む計算された画像プロパティを追加します。
     private var imageName: String
