@@ -6,8 +6,12 @@
 //
 
 import Foundation
-
-var landmarks: [Landmark] = load("landmarkData.json")// []は空配列の宣言(配列に格納する値の型を限定したい場合、末尾に型を追加)
+import Combine
+//CombineフレームワークのObservableObjectプロトコルに準拠した新しいモデルタイプを宣言する。SwiftUI は observable オブジェクトをサブスクライブし、データが変更されたときに更新が必要なすべてのビューを更新します。
+final class ModelData:ObservableObject{
+    //@Published属性をlandmarks配列に追加します。
+    @Published var landmarks: [Landmark] = load("landmarkData.json")// []は空配列の宣言(配列に格納する値の型を限定したい場合、末尾に型を追加)
+}
 
 //アプリのメイン バンドルから特定の名前の JSON データをフェッチする load(_:) メソッドを作成します。
 func load<T: Decodable>(_ filename: String) -> T {
