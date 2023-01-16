@@ -32,6 +32,8 @@ struct HikeView: View {
                         .labelStyle(.iconOnly)
                         .imageScale(.large)
                         .rotationEffect(.degrees(showDetail ? 90 : 0))
+                    //グラフが表示されているときにボタンを大きくして、別のアニメーション化可能な変更を追加します。
+                        .scaleEffect(showDetail ?1.5 : 1)
                         .padding()
                 }
             }
