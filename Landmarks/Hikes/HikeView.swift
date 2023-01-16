@@ -26,7 +26,11 @@ struct HikeView: View {
                 Spacer()
 
                 Button {
-                    showDetail.toggle()
+                    //withAnimation 関数の呼び出しでshowDetail.toggle()の呼び出しをラップします。
+                    //showDetail プロパティの影響を受ける両方のビュー (開示ボタンと HikeDetail ビュー) は、アニメーション化されたトランジションを持つようになりました。
+                    withAnimation{
+                        showDetail.toggle()
+                    }
                 } label: {
                     Label("Graph", systemImage: "chevron.right.circle")
                         .labelStyle(.iconOnly)
